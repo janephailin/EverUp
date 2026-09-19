@@ -41,4 +41,20 @@
     <lastmod>2026-09-19</lastmod>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://everupcommerce.com/en/waitlist.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://everupcommerce.com/en/waitlist.html" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://everupcommerce.com/th/waitlist.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everupcommerce.com/en/waitlist.html" />
+    <lastmod>2026-09-19</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://everupcommerce.com/th/waitlist.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://everupcommerce.com/en/waitlist.html" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://everupcommerce.com/th/waitlist.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://everupcommerce.com/en/waitlist.html" />
+    <lastmod>2026-09-19</lastmod>
+    <priority>0.9</priority>
+  </url>
 </urlset>

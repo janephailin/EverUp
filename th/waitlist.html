@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ลงชื่อรอคิว — EverUp</title>
+  <meta name="description" content="EverUp รับแบรนด์ใหม่แค่ 4 แบรนด์ต่อไตรมาส เล่าเรื่องร้านของคุณให้เราฟัง แล้วลงชื่อรอคิวไว้ได้เลย" />
+  <link rel="canonical" href="https://everupcommerce.com/th/waitlist.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="EverUp" />
+  <meta property="og:title" content="ลงชื่อรอคิว EverUp — รับ 4 แบรนด์ต่อไตรมาส" />
+  <meta property="og:description" content="EverUp รับแบรนด์ใหม่แค่ 4 แบรนด์ต่อไตรมาส เล่าเรื่องร้านของคุณให้เราฟัง แล้วลงชื่อรอคิวไว้ได้เลย" />
+  <meta property="og:url" content="https://everupcommerce.com/th/waitlist.html" />
+  <meta property="og:image" content="https://everupcommerce.com/assets/og-image.png" />
+  <meta property="og:locale" content="th_TH" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="alternate" hreflang="en" href="https://everupcommerce.com/en/waitlist.html" />
+  <link rel="alternate" hreflang="th" href="https://everupcommerce.com/th/waitlist.html" />
+  <link rel="alternate" hreflang="x-default" href="https://everupcommerce.com/en/waitlist.html" />
+  <link rel="icon" type="image/png" href="../assets/everup-mark.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --brand:#25F484; --brand-ink:#067A40; --brand-tint:#EAFEF2; --brand-edge:#C9FCDF;
+      --on-brand:#06331D; --ink:#2C2C2C; --ink-soft:#3F3F3F; --slate:#5C5C5C;
+      --muted:#6B6B6B; --border:#E5E5E5; --surface:#F7F7F7; --ground:#F2F6F2; --white:#FFFFFF;
+    }
+    body { font-family:'Noto Sans Thai', system-ui, sans-serif; color:var(--ink); background:var(--white);
+      font-size:16px; line-height:1.8; -webkit-font-smoothing:antialiased; }
+    .container { max-width:720px; margin:0 auto; padding:0 2rem; }
+    nav { position:sticky; top:0; z-index:100; background:rgba(255,255,255,.92);
+      backdrop-filter:blur(12px); border-bottom:1px solid var(--border); padding:0 2rem;
+      display:flex; align-items:center; justify-content:space-between; height:64px; gap:20px; }
+    .nav-logo { display:flex; align-items:center; flex-shrink:0; text-decoration:none; }
+    .nav-logo img { height:26px; width:auto; display:block; }
+    .nav-right { display:flex; align-items:center; gap:16px; }
+    .lang-switch { display:flex; align-items:center; gap:8px; font-size:13px; font-weight:600; }
+    .lang-switch a { color:var(--muted); text-decoration:none; }
+    .lang-switch a.active { color:var(--brand-ink); }
+    .lang-switch span { color:#B5B5B5; }
+    .nav-tag { font-size:12px; color:var(--slate); background:var(--surface);
+      border:1px solid var(--border); padding:6px 14px; border-radius:100px; text-decoration:none; }
+    .hero { background:var(--ground); border-bottom:1px solid var(--border); padding:64px 0 56px; }
+    .eyebrow { display:inline-block; font-size:12px; font-weight:700; letter-spacing:0;
+       color:var(--on-brand); background:var(--brand); padding:6px 16px;
+      border-radius:100px; margin-bottom:20px; }
+    h1 { font-size:clamp(30px,5vw,46px); font-weight:700; line-height:1.4;
+      letter-spacing:0; margin-bottom:16px; text-wrap:balance; }
+    h1 em { font-style:normal; text-decoration:underline; text-decoration-color:var(--brand);text-decoration-thickness:.085em; text-underline-offset:.26em;text-decoration-skip-ink:none; }
+    .sub { font-size:17px; color:var(--slate); line-height:1.8; max-width:56ch; }
+    main { padding:48px 0 72px; }
+    fieldset { border:none; margin-bottom:34px; }
+    legend { font-size:12px; font-weight:700; letter-spacing:0; 
+      color:var(--brand-ink); margin-bottom:18px; }
+    .field { margin-bottom:22px; }
+    label { display:block; font-size:15px; font-weight:600; margin-bottom:5px; }
+    .req { font-size:12px; font-weight:500; color:var(--muted); margin-left:6px; }
+    .hint { font-size:13.5px; color:var(--muted); line-height:1.55; margin-bottom:9px; }
+    input, select, textarea { width:100%; font-family:inherit; font-size:15.5px;
+      color:var(--ink); background:var(--white); border:1px solid #CBCFCB; border-radius:10px;
+      padding:12px 14px; transition:border-color .15s, box-shadow .15s; }
+    textarea { min-height:118px; resize:vertical; line-height:1.65; }
+    input:focus, select:focus, textarea:focus { outline:none; border-color:var(--brand-ink);
+      box-shadow:0 0 0 3px var(--brand-tint); }
+    select { appearance:none; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath fill='%236B6B6B' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+      background-repeat:no-repeat; background-position:right 15px center; background-size:12px; padding-right:40px; }
+    button { font-family:inherit; font-size:15.5px; font-weight:700; color:var(--on-brand);
+      background:var(--brand); border:none; border-radius:10px; padding:15px 34px;
+      cursor:pointer; transition:background .15s; }
+    button:hover { background:#5CF7A3; }
+    button:focus-visible { outline:3px solid var(--brand-ink); outline-offset:2px; }
+    .fineprint { font-size:13.5px; color:var(--muted); margin-top:16px; line-height:1.6; max-width:52ch; }
+    footer { background:#1A1A1A; padding:28px 2rem; text-align:center;
+      font-size:13px; color:#8E8E8E; }
+    footer span { color:var(--brand); }
+    @media (max-width:640px) { .container { padding:0 1.25rem; } nav { padding:0 1.25rem; } }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">
+    <img src="../assets/everup-logo-1line-open-black.png" alt="EverUp" width="103" height="26" />
+  </a>
+  <div class="nav-right">
+    <div class="lang-switch">
+      <a href="#" class="active">ไทย</a><span aria-hidden="true">|</span><a href="../en/waitlist.html">EN</a>
+    </div>
+    <a class="nav-tag" href="index.html">← กลับหน้าหลัก</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <div class="eyebrow">รับ 4 แบรนด์ต่อไตรมาส</div>
+    <h1>ลงชื่อ<em>รอคิว</em></h1>
+    <p class="sub">เราได้ค่าตอบแทนตามผลลัพธ์ แปลว่าเรารับความเสี่ยงไปกับคุณด้วย เราจึงรับเท่าที่เราทำให้โตได้จริง คือไตรมาสละ 4 แบรนด์ เล่าเรื่องร้านของคุณให้เราฟัง แล้วเราจะติดต่อกลับ</p>
+  </div>
+</section>
+
+<main>
+  <div class="container">
+    <!-- Replace FORM_ENDPOINT with your Formspree form ID (https://formspree.io) -->
+    <form action="https://formspree.io/f/FORM_ENDPOINT" method="POST">
+      <fieldset>
+        <legend>เกี่ยวกับร้านของคุณ</legend>
+
+        <div class="field">
+          <label for="shop">ลิงก์ร้านหรือแบรนด์<span class="req">จำเป็น</span></label>
+          <p class="hint" id="shop-hint">TikTok Shop, Shopee, Lazada หรือเว็บไซต์ของคุณ</p>
+          <input type="url" id="shop" name="shop_url" required aria-describedby="shop-hint"
+                 placeholder="https://" autocomplete="url" />
+        </div>
+
+        <div class="field">
+          <label for="gmv">GMV ต่อเดือนตอนนี้<span class="req">จำเป็น</span></label>
+          <select id="gmv" name="monthly_gmv" required>
+            <option value="" disabled selected>เลือกช่วงยอด</option>
+            <option>ต่ำกว่า ฿50,000</option>
+            <option>฿50,000 – 200,000</option>
+            <option>฿200,000 – 500,000</option>
+            <option>฿500,000 – 1,000,000</option>
+            <option>มากกว่า ฿1,000,000</option>
+            <option>ยังไม่ได้เริ่มขาย</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="platform">แพลตฟอร์มหลัก<span class="req">จำเป็น</span></label>
+          <select id="platform" name="platform" required>
+            <option value="" disabled selected>เลือกแพลตฟอร์ม</option>
+            <option>TikTok Shop</option>
+            <option>Shopee</option>
+            <option>Lazada</option>
+            <option>เว็บไซต์ของตัวเอง</option>
+            <option>หลายช่องทาง</option>
+            <option>อื่น ๆ</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="tried">ที่ผ่านมาลองทำอะไรมาบ้าง</label>
+          <p class="hint" id="tried-hint">ไลฟ์ ครีเอเตอร์ Affiliate ยิงแอด หรือเคยจ้างเอเจนซี่ แล้วผลเป็นยังไง เล่าตรง ๆ ได้เลย จะช่วยให้เราตอบได้จริงว่าช่วยได้ไหม</p>
+          <textarea id="tried" name="already_tried" aria-describedby="tried-hint"></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>ช่องทางติดต่อกลับ</legend>
+
+        <div class="field">
+          <label for="line">LINE ID</label>
+          <p class="hint" id="line-hint">ช่องทางที่เราติดต่อกลับได้เร็วที่สุด</p>
+          <input type="text" id="line" name="line_id" aria-describedby="line-hint" />
+        </div>
+
+        <div class="field">
+          <label for="email">อีเมล<span class="req">จำเป็น</span></label>
+          <input type="email" id="email" name="email" required autocomplete="email" />
+        </div>
+      </fieldset>
+
+      <button type="submit">ลงชื่อรอคิว</button>
+      <p class="fineprint">เราอ่านทุกฉบับ ถ้าเราไม่ใช่คนที่เหมาะกับคุณ เราจะบอกตรง ๆ และแนะนำว่าควรทำอะไรแทน</p>
+    </form>
+  </div>
+</main>
+
+<footer>&copy; 2026 <span>EverUp</span></footer>
+
+
+<script>
+// Fail-safe: until FORM_ENDPOINT is replaced with a real Formspree ID,
+// submitting opens a pre-filled email instead of hitting a dead URL.
+(function () {
+  var f = document.querySelector('form');
+  if (!f || f.action.indexOf('FORM_ENDPOINT') === -1) return;
+  f.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var L = {shop_url:'\u0e25\u0e34\u0e07\u0e01\u0e4c\u0e23\u0e49\u0e32\u0e19',monthly_gmv:'GMV \u0e15\u0e48\u0e2d\u0e40\u0e14\u0e37\u0e2d\u0e19',platform:'\u0e41\u0e1e\u0e25\u0e15\u0e1f\u0e2d\u0e23\u0e4c\u0e21',already_tried:'\u0e17\u0e35\u0e48\u0e40\u0e04\u0e22\u0e17\u0e33\u0e21\u0e32',line_id:'LINE ID',email:'\u0e2d\u0e35\u0e40\u0e21\u0e25'}, lines = [];
+    ['shop_url','monthly_gmv','platform','already_tried','line_id','email'].forEach(function (n) {
+      var el = f.elements[n];
+      if (el && el.value) lines.push(L[n] + ': ' + el.value);
+    });
+    window.location.href = 'mailto:janephailin.s@gmail.com'
+      + '?subject=' + encodeURIComponent('EverUp waitlist')
+      + '&body=' + encodeURIComponent(lines.join('\n\n'));
+  });
+})();
+</script>
+
+</body>
+</html>
