@@ -1,0 +1,6 @@
+# everupcommerce.com
+# All crawlers welcome, including AI assistants — being cited is the point.
+User-agent: *
+Allow: /
+
+Sitemap: https://everupcommerce.com/sitemap.xml
