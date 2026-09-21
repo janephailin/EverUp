@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Join the waitlist — EverUp</title>
-  <meta name="description" content="EverUp takes 4 new brands a quarter. Tell us about your shop and join the waitlist for performance-based e-commerce growth in Southeast Asia." />
+  <title>Talk to us about your shop — EverUp</title>
+  <meta name="description" content="Tell us about your shop and we'll read how it is actually performing — traffic, conversion, average order value. The first consultation is free, and the analysis is yours to keep." />
   <link rel="canonical" href="https://everupcommerce.com/en/waitlist.html" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="EverUp" />
-  <meta property="og:title" content="Join the EverUp waitlist — 4 brands a quarter" />
-  <meta property="og:description" content="EverUp takes 4 new brands a quarter. Tell us about your shop and join the waitlist for performance-based e-commerce growth in Southeast Asia." />
+  <meta property="og:title" content="Talk to us about your shop — EverUp" />
+  <meta property="og:description" content="Tell us about your shop and we'll read how it is actually performing — traffic, conversion, average order value. The first consultation is free, and the analysis is yours to keep." />
   <meta property="og:url" content="https://everupcommerce.com/en/waitlist.html" />
   <meta property="og:image" content="https://everupcommerce.com/assets/og-image.png" />
   <meta property="og:locale" content="en_US" />
@@ -79,6 +79,26 @@
     footer span { color:var(--brand); }
     @media (max-width:640px) { .container { padding:0 1.25rem; } nav { padding:0 1.25rem; } }
   </style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Talk to us about your shop",
+  "inLanguage": "en",
+  "url": "https://everupcommerce.com/en/waitlist.html",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "EverUp",
+    "url": "https://everupcommerce.com/"
+  },
+  "about": {
+    "@id": "https://everupcommerce.com/#organization"
+  },
+  "provider": {
+    "@id": "https://everupcommerce.com/#organization"
+  }
+}
+  </script>
 </head>
 <body>
 
@@ -96,9 +116,9 @@
 
 <section class="hero">
   <div class="container">
-    <div class="eyebrow">4 new brands a quarter</div>
-    <h1>Join the <em>waitlist</em></h1>
-    <p class="sub">We're paid on results, which means we carry the risk with you. So we only take on what we can genuinely move — four new brands a quarter, no more. Tell us about your shop and we'll come back to you.</p>
+    <div class="eyebrow">We start from where you are</div>
+    <h1>Talk to us about your <em>shop</em></h1>
+    <p class="sub">Before we propose anything, we read how your shop is actually performing — traffic, conversion rate, average order value, and where the sales are and aren't coming from. If you haven't started selling yet, we'll tell you what your category looks like before you do. The first consultation is free, and whether or not we end up working together, what we find is yours to keep.</p>
   </div>
 </section>
 
@@ -120,12 +140,13 @@
           <label for="gmv">Current monthly GMV<span class="req">required</span></label>
           <select id="gmv" name="monthly_gmv" required>
             <option value="" disabled selected>Select a range</option>
-            <option>Under ฿50,000</option>
-            <option>฿50,000 – 200,000</option>
-            <option>฿200,000 – 500,000</option>
-            <option>฿500,000 – 1,000,000</option>
-            <option>Over ฿1,000,000</option>
             <option>Not selling yet</option>
+            <option>Under ฿100,000</option>
+            <option>฿100,000 – 500,000</option>
+            <option>฿500,000 – 1,000,000</option>
+            <option>฿1,000,000 – 2,000,000</option>
+            <option>฿2,000,000 – 5,000,000</option>
+            <option>Over ฿5,000,000</option>
           </select>
         </div>
 
@@ -164,7 +185,7 @@
         </div>
       </fieldset>
 
-      <button type="submit">Join the waitlist</button>
+      <button type="submit">Talk to us</button>
       <p class="fineprint">We read every submission. If we're not the right fit we'll say so — and tell you what we'd do instead.</p>
     </form>
   </div>
@@ -187,7 +208,7 @@
       if (el && el.value) lines.push(L[n] + ': ' + el.value);
     });
     window.location.href = 'mailto:janephailin.s@gmail.com'
-      + '?subject=' + encodeURIComponent('EverUp waitlist')
+      + '?subject=' + encodeURIComponent('EverUp enquiry')
       + '&body=' + encodeURIComponent(lines.join('\n\n'));
   });
 })();
