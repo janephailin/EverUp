@@ -1,5 +1,5 @@
 # everupcommerce.com
-# All crawlers welcome, including AI assistants — being cited is the point.
+# All crawlers welcome, including AI assistants - being cited is the point.
 
 User-agent: *
 Allow: /

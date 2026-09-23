@@ -1,0 +1,5 @@
+# Serve plain-text and XML as UTF-8. Browsers otherwise fall back to
+# latin-1 for files that carry no charset of their own, which turns any
+# non-ASCII character into mojibake.
+AddDefaultCharset UTF-8
+AddCharset UTF-8 .txt .xml
