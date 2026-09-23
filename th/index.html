@@ -540,6 +540,57 @@
     }
     footer span { color: var(--brand); }
 
+    /* ── Clients ── */
+    .clients-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px; margin-top: 40px;
+      align-items: start;
+    }
+    .client-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 22px 22px 26px;
+      display: flex; flex-direction: column;
+    }
+    .client-logo {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      background: var(--white);
+      margin-bottom: 20px;
+    }
+    .client-logo img { display: block; width: 100%; height: auto; }
+    .client-name {
+      font-size: 16px; font-weight: 600; color: var(--ink);
+      margin-bottom: 3px;
+    }
+    .client-cat {
+      font-size: 12px; color: var(--muted); margin-bottom: 14px;
+    }
+    .client-role {
+      font-size: 13.5px; color: var(--slate); line-height: 1.85; flex: 1;
+      list-style: none;
+    }
+    .client-role li {
+      position: relative; padding: 5px 0 5px 16px;
+    }
+    .client-role li::before {
+      content: '';
+      position: absolute; left: 0; top: 15px;
+      width: 5px; height: 5px; border-radius: 50%;
+      background: var(--brand-ink);
+    }
+    .client-link {
+      font-size: 13px; font-weight: 600; color: var(--brand-ink);
+      text-decoration: none; margin-top: 18px; align-self: flex-start;
+      display: inline-flex; align-items: center; gap: 5px;
+      transition: gap 0.15s;
+    }
+    .client-link:hover { gap: 9px; }
+    .client-link::after { content: '→'; }
+
     /* ── Responsive ── */
     @media (max-width: 800px) {
       .nav-links { display: none; }
@@ -547,6 +598,8 @@
       .steps-grid { grid-template-columns: 1fr; }
       .services-grid { grid-template-columns: 1fr; }
       .audience-grid { grid-template-columns: 1fr; }
+      .clients-grid { grid-template-columns: 1fr; }
+      .client-logo { max-width: 260px; }
       .overview-item { flex: 1 1 50%; padding: 16px 14px; }
       .overview-item:nth-child(2) { border-right: none; }
       .cs-teaser {
@@ -873,6 +926,55 @@
         <div class="service-tags">
           <span class="service-tag">บริการไลฟ์สตรีมมิ่ง</span>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Clients -->
+<section id="clients">
+  <div class="container">
+    <div class="section-label">ลูกค้าของเรา</div>
+    <h2>แบรนด์ที่เราเคยร่วมงานด้วย</h2>
+    <p class="lead">เราทำงานกับแบรนด์ที่มีทั้งสินค้า เป้าหมาย และช่วงการเติบโตที่แตกต่างกัน ขอบเขตการทำงานจึงปรับให้เหมาะกับความต้องการของแต่ละธุรกิจ</p>
+
+    <div class="clients-grid">
+      <div class="client-card">
+        <div class="client-logo"><img src="../assets/clients/heypro.png" alt="HeyPro!" width="600" height="300" loading="lazy"></div>
+        <div class="client-name">HeyPro!</div>
+        <div class="client-cat">โปรตีนบาร์</div>
+        <ul class="client-role">
+          <li>วางกลยุทธ์การ Launch แบรนด์บน TikTok Shop</li>
+          <li>วางกลยุทธ์ Affiliate</li>
+          <li>คัดเลือกครีเอเตอร์</li>
+          <li>ดูแลการทำงานร่วมกับครีเอเตอร์</li>
+          <li>อบรมทีมผู้บริหารด้านกลยุทธ์การไลฟ์</li>
+        </ul>
+      </div>
+      <div class="client-card">
+        <div class="client-logo"><img src="../assets/clients/kudos.png" alt="KUDOS" width="600" height="300" loading="lazy"></div>
+        <div class="client-name">KUDOS</div>
+        <div class="client-cat">ฝักบัวกรองน้ำสไตล์ญี่ปุ่น</div>
+        <ul class="client-role">
+          <li>วางกลยุทธ์ Affiliate</li>
+          <li>คัดเลือกครีเอเตอร์</li>
+          <li>ดูแลการทำงานร่วมกับครีเอเตอร์</li>
+          <li>อบรมและพัฒนาทีมงานภายในองค์กร</li>
+        </ul>
+      </div>
+      <div class="client-card">
+        <div class="client-logo"><img src="../assets/clients/soilseven.png" alt="S-Oil Seven Thailand" width="600" height="300" loading="lazy"></div>
+        <div class="client-name">S-Oil Seven Thailand</div>
+        <div class="client-cat">น้ำมันเครื่องแบรนด์เกาหลี</div>
+        <ul class="client-role">
+          <li>วางกลยุทธ์การเติบโตองค์รวม</li>
+          <li>วางกลยุทธ์ Affiliate และคัดเลือกครีเอเตอร์</li>
+          <li>ดูแลการดำเนินงาน ปรับปรุงกระบวนการ</li>
+          <li>อบรมทีมไลฟ์และทีมงานภายในองค์กร</li>
+          <li>พัฒนาการจัดไลฟ์ที่สตูดิโอของแบรนด์</li>
+          <li>จัดไลฟ์ที่สตูดิโอของ EverUp</li>
+        </ul>
+        <a href="soilseven-casestudy.html" class="client-link">อ่านเคสตัวอย่าง</a>
       </div>
     </div>
   </div>

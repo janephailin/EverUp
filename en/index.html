@@ -537,6 +537,57 @@
     }
     footer span { color: var(--brand); }
 
+    /* ── Clients ── */
+    .clients-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px; margin-top: 40px;
+      align-items: start;
+    }
+    .client-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 22px 22px 26px;
+      display: flex; flex-direction: column;
+    }
+    .client-logo {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      background: var(--white);
+      margin-bottom: 20px;
+    }
+    .client-logo img { display: block; width: 100%; height: auto; }
+    .client-name {
+      font-size: 16px; font-weight: 600; color: var(--ink);
+      margin-bottom: 3px;
+    }
+    .client-cat {
+      font-size: 12px; color: var(--muted); margin-bottom: 14px;
+    }
+    .client-role {
+      font-size: 13.5px; color: var(--slate); line-height: 1.7; flex: 1;
+      list-style: none;
+    }
+    .client-role li {
+      position: relative; padding: 5px 0 5px 16px;
+    }
+    .client-role li::before {
+      content: '';
+      position: absolute; left: 0; top: 14px;
+      width: 5px; height: 5px; border-radius: 50%;
+      background: var(--brand-ink);
+    }
+    .client-link {
+      font-size: 13px; font-weight: 600; color: var(--brand-ink);
+      text-decoration: none; margin-top: 18px; align-self: flex-start;
+      display: inline-flex; align-items: center; gap: 5px;
+      transition: gap 0.15s;
+    }
+    .client-link:hover { gap: 9px; }
+    .client-link::after { content: '→'; }
+
     /* ── Responsive ── */
     @media (max-width: 800px) {
       .nav-links { display: none; }
@@ -544,6 +595,8 @@
       .steps-grid { grid-template-columns: 1fr; }
       .services-grid { grid-template-columns: 1fr; }
       .audience-grid { grid-template-columns: 1fr; }
+      .clients-grid { grid-template-columns: 1fr; }
+      .client-logo { max-width: 260px; }
       .overview-item { flex: 1 1 50%; padding: 16px 14px; }
       .overview-item:nth-child(2) { border-right: none; }
       .cs-teaser {
@@ -870,6 +923,55 @@
         <div class="service-tags">
           <span class="service-tag">Livestreaming Service</span>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Clients -->
+<section id="clients">
+  <div class="container">
+    <div class="section-label">Our clients</div>
+    <h2>Brands we've worked with</h2>
+    <p class="lead">The brands we work with differ in product, in goals and in how far along they are, so the scope is shaped around what each business needs.</p>
+
+    <div class="clients-grid">
+      <div class="client-card">
+        <div class="client-logo"><img src="../assets/clients/heypro.png" alt="HeyPro!" width="600" height="300" loading="lazy"></div>
+        <div class="client-name">HeyPro!</div>
+        <div class="client-cat">Protein bars</div>
+        <ul class="client-role">
+          <li>Launch strategy on TikTok Shop</li>
+          <li>Affiliate strategy</li>
+          <li>Creator selection</li>
+          <li>Creator relationship management</li>
+          <li>Executive training on live strategy</li>
+        </ul>
+      </div>
+      <div class="client-card">
+        <div class="client-logo"><img src="../assets/clients/kudos.png" alt="KUDOS" width="600" height="300" loading="lazy"></div>
+        <div class="client-name">KUDOS</div>
+        <div class="client-cat">Japanese-style filter showerheads</div>
+        <ul class="client-role">
+          <li>Affiliate strategy</li>
+          <li>Creator selection</li>
+          <li>Creator relationship management</li>
+          <li>In-house team training and development</li>
+        </ul>
+      </div>
+      <div class="client-card">
+        <div class="client-logo"><img src="../assets/clients/soilseven.png" alt="S-Oil Seven Thailand" width="600" height="300" loading="lazy"></div>
+        <div class="client-name">S-Oil Seven Thailand</div>
+        <div class="client-cat">Korean engine oil</div>
+        <ul class="client-role">
+          <li>Overall growth strategy</li>
+          <li>Affiliate strategy and creator selection</li>
+          <li>Shop operations and process improvement</li>
+          <li>Training for the live team and the in-house team</li>
+          <li>Live production improvement at the brand's studio</li>
+          <li>Live hosting at EverUp's studio</li>
+        </ul>
+        <a href="soilseven-casestudy.html" class="client-link">Read the case study</a>
       </div>
     </div>
   </div>
