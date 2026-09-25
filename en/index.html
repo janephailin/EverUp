@@ -417,8 +417,16 @@
     .service-link:hover { gap: 9px; }
     .service-link::after { content: '→'; }
     .service-card--featured {
+      background: var(--brand-tint);
       border-color: var(--brand-edge);
-      box-shadow: 0 4px 28px rgba(37,244,132,0.18);
+    }
+    .service-card--featured .chip { background: var(--white); }
+    .service-meta { display: flex; align-items: center; gap: 10px; }
+    .pill-popular {
+      background: var(--brand-ink); color: #fff;
+      border-radius: 100px; padding: 3px 11px;
+      font-size: 11px; font-weight: 700; letter-spacing: 0.3px;
+      white-space: nowrap;
     }
 
     /* ── Who it's for ── */
@@ -789,9 +797,12 @@
 
     <div class="services-grid">
 
-      <div class="service-card">
+      <div class="service-card service-card--featured">
         <div class="service-head">
-          <div class="service-num">01</div>
+          <div class="service-meta">
+            <div class="service-num">01</div>
+            <span class="pill-popular">Most popular</span>
+          </div>
           <span class="chip chip-online">Online</span>
         </div>
         <h3>Growth Strategy Consulting</h3>
@@ -805,7 +816,7 @@
         <a href="soilseven-casestudy.html" class="service-link">See case study</a>
       </div>
 
-      <div class="service-card service-card--featured">
+      <div class="service-card">
         <div class="service-head">
           <div class="service-num">02</div>
           <span class="chip chip-inperson">Half-Day In-Person</span>

@@ -421,8 +421,16 @@
     .service-link:hover { gap: 9px; }
     .service-link::after { content: '→'; }
     .service-card--featured {
+      background: var(--brand-tint);
       border-color: var(--brand-edge);
-      box-shadow: 0 4px 28px rgba(37,244,132,0.18);
+    }
+    .service-card--featured .chip { background: var(--white); }
+    .service-meta { display: flex; align-items: center; gap: 10px; }
+    .pill-popular {
+      background: var(--brand-ink); color: #fff;
+      border-radius: 100px; padding: 3px 11px;
+      font-size: 11px; font-weight: 700; letter-spacing: 0;
+      white-space: nowrap;
     }
 
     /* ── Who it's for ── */
@@ -793,9 +801,12 @@
 
     <div class="services-grid">
 
-      <div class="service-card">
+      <div class="service-card service-card--featured">
         <div class="service-head">
-          <div class="service-num">01</div>
+          <div class="service-meta">
+            <div class="service-num">01</div>
+            <span class="pill-popular">แนะนำ</span>
+          </div>
           <span class="chip chip-online">ออนไลน์</span>
         </div>
         <h3>ที่ปรึกษาด้านกลยุทธ์การเติบโต</h3>
@@ -809,7 +820,7 @@
         <a href="soilseven-casestudy.html" class="service-link">ดูเคสตัวอย่าง</a>
       </div>
 
-      <div class="service-card service-card--featured">
+      <div class="service-card">
         <div class="service-head">
           <div class="service-num">02</div>
           <span class="chip chip-inperson">อบรมครึ่งวัน ออนไซต์</span>
